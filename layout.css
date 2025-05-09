@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-logo {
+  width: 200px; /* Adjust the width as needed */
+  height: 20vh; /* Maintain aspect ratio */
+  display: block;
+  margin: 2em auto; /* Center the image */
+}
+
+/* Additional styles for the header */
+main {
+  text-align: center;
+  padding: 20px;
+  /* background-color: rgb(252, 219, 211); Example background color */
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-bottom: 2em;
+}
+/*  MODAL CSS START ---------------------- */
+.custom-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.custom-modal-content {
+  position: relative;
+  background-color: #070141;
+  color: white;
+  top: 15vh;
+  padding: 2em;
+  margin: auto;
+  width: 50vw;
+  height: auto;
+  border-radius: 10px;
+  z-index: 1000;
+  animation: animatetop 0.6s;
+}
+
+.custom-modal-content h2 {
+  padding: 0;
+  margin: 0;
+  color: rgb(192, 123, 33);
+}
+.custom-modal-content p {
+  text-align: left;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-close-btn {
+  position: absolute;
+  top: -0.5em; /* Align the close button to the top */
+  right: 0.3em; /* Adjust the position from the right side */
+  margin-top: 0.5em;
+  color: rgb(212, 8, 8);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.custom-close-btn:hover {
+  cursor: pointer;
+  color: rgb(32, 230, 230, 0.8);
+  animation: close-btn-change 0.5s linear both;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes close-btn-change {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+/* MODAL CSS FINISH  ------------------------*/
+
+/* BREAKPOINT MODAL */
+@media (max-width: 650px) {
+  main {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .custom-modal-content {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
