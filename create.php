@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once __DIR__ . '/../secure/config.php';
+require_once __DIR__ . '/../config/config.php';
  
 // Define variables and initialize with empty values
 $wine_id = $producer = $supplier = $category = $year = $region = $cost = $price = $quantity = "";

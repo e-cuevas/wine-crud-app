@@ -5,7 +5,7 @@
 // Check existence of id parameter before processing further
 if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
   // Include config file
- require_once __DIR__ . '/../secure/config.php';
+ require_once __DIR__ . '/../config/config.php';
     
     // Prepare a select statement
     $sql = "SELECT * FROM wines WHERE wine_id = ?";

@@ -47,7 +47,8 @@
 
                     <?php
                     // Include config file
-                      include "includes/config.php";
+                      // filepath: public/index.php
+require __DIR__ . '/../config/config.php';
                              
  // Attempt select query execution
 $sql = "SELECT * FROM wines";
