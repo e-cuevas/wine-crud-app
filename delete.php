@@ -2,7 +2,7 @@
 // Process delete operation after confirmation
 if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Include config file
-    include "includes/config.php";
+  require_once __DIR__ . '/../secure/config.php';
     
     // Prepare a delete statement
     $sql = "DELETE FROM wines WHERE wine_id = ?";

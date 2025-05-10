@@ -1,6 +1,6 @@
 <?php
 // Include config file
-include "includes/config.php";
+require_once __DIR__ . '/../secure/config.php';
  
  
 // Define variables and initialize with empty values
